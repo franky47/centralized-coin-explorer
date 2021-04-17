@@ -29,37 +29,36 @@
   },
   "dependencies": {
     "@47ng/chakra-next": "^3.0.0-beta.4",
-    "@chakra-ui/react": "^1.3.4",
+    "@chakra-ui/react": "^1.5.1",
     "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.1.5",
-    "@sentry/browser": "^6.2.2",
-    "@sentry/integrations": "^6.2.2",
-    "@sentry/node": "^6.2.2",
-    "@sentry/webpack-plugin": "^1.14.2",
-    "framer-motion": "^3.x",
-    "next": "^10.0.9",
-    "next-seo": "^4.22.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "@emotion/styled": "^11.3.0",
+    "@sentry/browser": "^6.2.5",
+    "@sentry/integrations": "^6.2.5",
+    "@sentry/node": "^6.2.5",
+    "@sentry/webpack-plugin": "^1.15.0",
+    "framer-motion": "^4.x",
+    "next": "^10.1.3",
+    "next-seo": "^4.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^12.0.1",
-    "@next/bundle-analyzer": "^10.0.9",
-    "@types/jest": "^26.0.21",
-    "@types/node": "^14.14.35",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@next/bundle-analyzer": "^10.1.3",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.41",
     "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.2",
-    "@types/webpack": "^4.41.26",
-    "commitlint": "^12.0.1",
-    "husky": "4.x",
+    "@types/react-dom": "^17.0.3",
+    "@types/webpack": "^5.28.0",
+    "commitlint": "^12.1.1",
     "jest": "^26.6.3",
     "next-compose-plugins": "^2.2.1",
-    "next-transpile-modules": "^6.3.0",
+    "next-transpile-modules": "^6.4.0",
     "npm-run-all": "^4.1.5",
-    "ts-jest": "^26.5.4",
+    "ts-jest": "^26.5.5",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.3",
+    "typescript": "^4.2.4",
     "webpack": "^5"
   },
   "jest": {
@@ -74,11 +73,6 @@
     "tabWidth": 2,
     "trailingComma": "none",
     "useTabs": false
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "commitlint": {
     "extends": [
