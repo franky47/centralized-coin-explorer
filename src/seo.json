@@ -1,0 +1,22 @@
+{
+  "title": "Template Website",
+  "description": "Template website with Next.js & Chakra UI",
+  "additionalMetaTags": [{ "property": "author", "content": "François Best" }],
+  "twitter": {
+    "cardType": "summary_large_image",
+    "handle": "fortysevenfx",
+    "site": "fortysevenfx"
+  },
+  "openGraph": {
+    "type": "website",
+    "locale": "en-GB",
+    "site_name": "Template Website",
+    "images": [
+      {
+        "url": "https://usefoggy.vercel.app/api/og?url=https://www.figma.com/file/wIUwwcEYBT91dauceIxL81/47ng?node-id=1%3A7",
+        "width": 1200,
+        "height": 630
+      }
+    ]
+  }
+}
