@@ -11,6 +11,7 @@ export interface APITransaction {
   amount_received: number
   recipients: string[]
   from: string
+  memo: string
 }
 
 export interface Transaction {
@@ -22,6 +23,7 @@ export interface Transaction {
     received: number
     fee: number
   }
+  memo?: string
   from: {
     hash: string
     avatar: string
@@ -54,6 +56,7 @@ export async function fetchTransactionPage(
         received: transaction.amount_received,
         fee: transaction.amount_sent - transaction.amount_received
       },
+      memo: transaction.memo || undefined,
       from: {
         hash: transaction.from,
         isCommunityCompound,

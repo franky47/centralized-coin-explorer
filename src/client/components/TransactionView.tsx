@@ -20,6 +20,7 @@ import {
   FiClock,
   FiDatabase,
   FiDownload,
+  FiFileText,
   FiLock,
   FiServer,
   FiUpload
@@ -139,7 +140,15 @@ export const TransactionView: React.FC<TransactionViewProps> = ({
                 cc
               </Td>
             </Tr>
-
+            {!!transaction.memo && (
+              <Tr>
+                <Td>
+                  <Icon as={FiFileText} mr={2} mt="-2px" />
+                  Public Memo
+                </Td>
+                <Td fontSize="xs">{transaction.memo}</Td>
+              </Tr>
+            )}
             <Tr>
               <Td>
                 <Icon as={FiDatabase} mr={2} mt="-2px" />
