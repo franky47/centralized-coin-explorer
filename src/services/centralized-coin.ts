@@ -84,7 +84,7 @@ export function useTransactionPage(pageNumber: number) {
     () => fetchTransactionPage(pageNumber),
     {
       keepPreviousData: true,
-      staleTime: Infinity
+      staleTime: 1000 * 60 * 10 // 10 minutes
     }
   )
 }
