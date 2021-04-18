@@ -1,6 +1,6 @@
 {
-  "title": "Template Website",
-  "description": "Template website with Next.js & Chakra UI",
+  "title": "Centralized Coin Explorer",
+  "description": "Explore public transactions for Centralized Coin",
   "additionalMetaTags": [{ "property": "author", "content": "François Best" }],
   "twitter": {
     "cardType": "summary_large_image",
@@ -10,7 +10,7 @@
   "openGraph": {
     "type": "website",
     "locale": "en-GB",
-    "site_name": "Template Website",
+    "site_name": "Centralized Coin Explorer",
     "images": [
       {
         "url": "https://usefoggy.vercel.app/api/og?url=https://www.figma.com/file/wIUwwcEYBT91dauceIxL81/47ng?node-id=1%3A7",

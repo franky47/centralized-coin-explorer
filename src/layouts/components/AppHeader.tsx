@@ -1,3 +1,4 @@
+import { RouteLink } from '@47ng/chakra-next'
 import { Flex, FlexProps, Heading, HStack } from '@chakra-ui/react'
 import React from 'react'
 import seo from 'src/seo.json'
@@ -13,9 +14,11 @@ export const AppHeader: React.FC<AppHeaderProps> = ({ ...props }) => {
       alignItems="center"
       {...props}
     >
-      <Heading as="h1" fontSize="xl">
-        {seo.title}
-      </Heading>
+      <RouteLink to="/">
+        <Heading as="h1" fontSize="xl">
+          {seo.title}
+        </Heading>
+      </RouteLink>
       <HStack as="nav">
         <ColorModeSwitch />
       </HStack>
