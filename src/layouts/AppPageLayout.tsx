@@ -1,5 +1,6 @@
 import { Container, ContainerProps } from '@chakra-ui/react'
 import React from 'react'
+import { AppFooter } from './components/AppFooter'
 import { AppHeader } from './components/AppHeader'
 
 export interface AppPageLayoutProps extends ContainerProps {}
@@ -15,6 +16,7 @@ export const AppPageLayout: React.FC<AppPageLayoutProps> = ({
       <Container as="main" maxW={maxW} {...props}>
         {children}
       </Container>
+      <AppFooter />
     </>
   )
 }
