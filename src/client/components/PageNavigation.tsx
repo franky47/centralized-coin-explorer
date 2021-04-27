@@ -3,8 +3,7 @@ import { queryTypes, useQueryState } from 'next-usequerystate'
 import React from 'react'
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi'
 import { MdFirstPage, MdLastPage} from 'react-icons/md'
-import { useTransactionPage } from 'src/services/centralized-coin'
-import { getNumberOfPages } from 'src/services/centralized-coin'
+import { getNumberOfPages, useTransactionPage } from 'src/services/centralized-coin'
 
 // --
 
@@ -15,7 +14,7 @@ function useNavigation() {
   })
   
   const last = React.useCallback(() => getNumberOfPages().then(
-    (value: number) => { setPage(page => value)
+    (value: number) => { setPage(value)
   }), [])
 
   const next = React.useCallback(() => setPage(page => page + 1), [])
@@ -24,7 +23,7 @@ function useNavigation() {
     []
   )
 
-  const first = React.useCallback(() => setPage(page => 0), [])
+  const first = React.useCallback(() => setPage(0), [])
 
   const { isLoading, isFetching } = useTransactionPage(page)
   return {
