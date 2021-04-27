@@ -105,12 +105,12 @@ export function usePreloadNeighbouringPages(pageNumber: number) {
   }, [pageNumber])
 }
 
-export async function getNumberOfPages() : Promise<number> {
+export async function getLastPageNumber() : Promise<number> {
   const res = await fetch(
     `https://www.centralized-coin.com/api/stats`
   )
   const data = await res.json()
   const transactionsPerPage = 50;
   const numberOfTransactions: number = data.count
-  return Math.floor(numberOfTransactions/ transactionsPerPage);
+  return Math.ceil(numberOfTransactions/ transactionsPerPage);
 }

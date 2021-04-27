@@ -3,7 +3,7 @@ import { queryTypes, useQueryState } from 'next-usequerystate'
 import React from 'react'
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi'
 import { MdFirstPage, MdLastPage} from 'react-icons/md'
-import { getNumberOfPages, useTransactionPage } from 'src/services/centralized-coin'
+import { getLastPageNumber, useTransactionPage } from 'src/services/centralized-coin'
 
 // --
 
@@ -13,7 +13,7 @@ function useNavigation() {
     ...queryTypes.integer
   })
   
-  const last = React.useCallback(() => getNumberOfPages().then(
+  const last = React.useCallback(() => getLastPageNumber().then(
     (value: number) => { setPage(value)
   }), [])
 
