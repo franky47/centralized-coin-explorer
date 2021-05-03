@@ -112,5 +112,5 @@ export async function getLastPageNumber() : Promise<number> {
   const data = await res.json()
   const transactionsPerPage = 50;
   const numberOfTransactions: number = data.count
-  return Math.ceil(numberOfTransactions/ transactionsPerPage);
+  return Math.floor(numberOfTransactions/ transactionsPerPage);
 }
