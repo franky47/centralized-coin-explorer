@@ -38,7 +38,7 @@
     "@sentry/node": "^6.2.5",
     "@sentry/webpack-plugin": "^1.15.0",
     "framer-motion": "^4.x",
-    "next": "^10.1.3",
+    "next": "^13.5.6",
     "next-seo": "^4.24.0",
     "next-usequerystate": "^1.4.0-beta.2",
     "react": "^17.0.2",
@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^12.1.1",
-    "@next/bundle-analyzer": "^10.1.3",
+    "@next/bundle-analyzer": "^13.5.6",
     "@types/jest": "^26.0.22",
     "@types/node": "^14.14.41",
     "@types/react": "^17.0.3",
